@@ -1,0 +1,128 @@
+body {
+    background-color: palegoldenrod;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.tap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tap button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.numberParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.num {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    /* text-align: center; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players h1:first-child {
+    color: rgb(47, 168, 184);
+}
+
+.players h1:last-child {
+    color: rgb(32, 180, 32);
+}
+
+.imgs img:first-child {
+    border: 2px solid brown;
+}
+
+.imgs img:last-child {
+    border: 2px solid pink;
+}
+
+
+
+@media screen and (min-width: 2560px) {
+    .content{
+        height: 80%;
+    }
+
+    .players{
+        font-size: 55px;
+    }
+
+    img{
+        width: 350px;
+    }
+
+    .imgs img:first-child {
+        width: 400px;
+    }
+
+    .roll button{
+        width: 200px;
+        height: 70px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .numberParent {
+        margin-top: 20px;
+    }
+    
+    .num {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}
